@@ -18,3 +18,5 @@ except KeyboardInterrupt:
     print("Exiting program")
 finally:
     GPIO.cleanup()
+
+# Hallo 
