@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-import time #neuer branch
+import time 
 
 # GPIO-Modus (BOARD / BCM)
 GPIO.setmode(GPIO.BCM)
