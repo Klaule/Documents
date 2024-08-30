@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-import time
+import time # datetime
 
 # GPIO-Modus (BOARD / BCM)
 GPIO.setmode(GPIO.BCM)
@@ -12,14 +12,14 @@ GPIO.setup(TASTER_PIN, GPIO.OUT)
 
 try:
     while True:
-        # Simuliere Taster gedrückt
+        # Simuliere Taster gedrï¿½ckt
         GPIO.output(TASTER_PIN, GPIO.HIGH)
-        print("Taster gedrückt")
+        print("Taster gedrï¿½ckt")
         time.sleep(1)
         
-        # Simuliere Taster nicht gedrückt
+        # Simuliere Taster nicht gedrï¿½ckt
         GPIO.output(TASTER_PIN, GPIO.LOW)
-        print("Taster nicht gedrückt")
+        print("Taster nicht gedrï¿½ckt")
         time.sleep(1)
 except KeyboardInterrupt:
     GPIO.cleanup()
